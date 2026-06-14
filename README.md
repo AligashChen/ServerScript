@@ -88,12 +88,21 @@ bash reinstall.sh anolis      7|8|23
 
 - `--username USERNAME` 设置用户名
 - `--password PASSWORD` 设置密码
-- `--ssh-key KEY` 设置 SSH 登录公钥，[格式如下](#--ssh-key)。当使用公钥时，密码为空
+- `--ssh-key KEY` 设置 SSH 登录公钥，格式如下，当使用公钥时，密码为空
 - `--ssh-port PORT` 修改 SSH 端口
 - `--web-port PORT` 修改 Web 端口（安装期间观察日志用）
 - `--frpc-config PATH` 添加 frpc 内网穿透，参数填配置文件的本地路径或 HTTP 链接
 - `--hold 1` 仅重启到安装环境，不运行安装，用于 SSH 登录验证网络连通性
 - `--hold 2` 安装结束后不重启，用于 SSH 登录修改系统内容，Debian/Kali 会挂载在 `/target`，其它系统会挂载在 `/os`
+### 参数格式
+- `--ssh-key "ssh-rsa ..."`
+- `--ssh-key "ssh-ed25519 ..."`
+- `--ssh-key "ecdsa-sha2-nistp256/384/521 ..."`
+- `--ssh-key http://path/to/public_key`
+- `--ssh-key github:your_username`
+- `--ssh-key gitlab:your_username`
+- `--ssh-key /path/to/public_key`
+- `--ssh-key C:\path\to\public_key`
 
 ## 安装命令示例
 
