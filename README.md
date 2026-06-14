@@ -42,7 +42,7 @@
 # 下载（当前系统是 <img width="20" height="20" src="https://www.kernel.org/theme/images/logos/favicon.png" /> Linux）
 
 ```bash
-curl -O https://githubadd01.19950628.xyz/https://raw.githubusercontent.com/AligashChen/ServerScript/main/reinstall.sh || wget -O ${_##*/} $_
+curl -O https://githubadd01.19950628.xyz/https://raw.githubusercontent.com/AligashChen/DDScript/main/reinstall.sh || wget -O ${_##*/} $_
 ```
 
 # 安装
